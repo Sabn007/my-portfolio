@@ -35,7 +35,7 @@ export default function Header() {
               Sabin Maharjan
             </span>
           </a>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="flex items-center space-x-6 ml-96 text-sm font-medium">
             <a
               className="transition-colors hover:text-foreground/80 text-foreground/60"
               href="#about"

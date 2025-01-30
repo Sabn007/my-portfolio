@@ -11,7 +11,7 @@ import BackgroundAnimation from "@/components/BackgroundAnimation";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 dark:bg-gray-900 relative overflow-hidden">
-      <BackgroundAnimation />
+      {/* <BackgroundAnimation /> */}
       <Hero />
       <AboutMe />
       <Experience />
