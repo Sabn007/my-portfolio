@@ -52,14 +52,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-24 px-6">
-      <h2
-        className="text-3xl font-bold text-center mb-12"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        Work Experience
-      </h2>
+      <h2 className="text-3xl font-bold text-center mb-12">Work Experience</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {experiences.map((exp, index) => (
           <div key={index}>
@@ -90,15 +83,13 @@ export default function Experience() {
                   )}
                 </Button>
               </CardContent>
-              <AnimatePresence>
-                {expandedIndex === index && (
-                  <div>
-                    <CardContent>
-                      <p className="text-sm">{exp.description}</p>
-                    </CardContent>
-                  </div>
-                )}
-              </AnimatePresence>
+              {expandedIndex === index && (
+                <div>
+                  <CardContent>
+                    <p className="text-sm">{exp.description}</p>
+                  </CardContent>
+                </div>
+              )}
             </Card>
           </div>
         ))}
